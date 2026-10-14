@@ -1,0 +1,44 @@
+GitHub Push Commands
+====================
+
+Step 1: Go to github.com → New repository → name it → do NOT initialize with README → Create repository.
+
+
+Step 2: Initialize git and make first commit
+--------------------------------------------
+
+cd /home/pragati-m/Desktop/MLwithpoppa/dmft-lstm-autoencoder
+
+git init
+git add README.md requirements.txt .gitignore
+git add data/README.md data/dataSVO.npz data/dataCVO.npz
+git add models/trained_model_svo.keras
+git add 01_preprocess_svo.ipynb 02_train_svo_lstm.ipynb 03_transfer_learning_cvo.ipynb
+git add beta_variation/04_beta_variation_svo.ipynb beta_variation/model.py beta_variation/methodology.md
+git add beta_variation/models/lstm_beta_variation_svo.keras
+git add beta_variation/processed_data/data_beta_variation_svo.npz
+
+git commit -m "Initial commit: DMFT LSTM autoencoder example"
+
+
+Step 3: Connect to GitHub and push
+-----------------------------------
+(replace your-username with your GitHub username)
+
+git remote add origin https://github.com/your-username/dmft-lstm-autoencoder.git
+git branch -M main
+git push -u origin main
+
+
+Optional: Git LFS for large files (if any file exceeds 50 MB)
+--------------------------------------------------------------
+
+git lfs install
+git lfs track "*.npz" "*.keras"
+git add .gitattributes
+
+
+Optional: Switch to SSH authentication
+----------------------------------------
+
+git remote set-url origin git@github.com:your-username/dmft-lstm-autoencoder.git
