@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Output plots and intermediate results
+plots/
+new_plots/
+*.eps
+*.png
+*.npy
+!beta_variation/plots/  # keep documented output examples if added
+
+# Large raw simulation files (not tracked — see data/README.md)
+sims_*/
+*.h5
+
+# IDE
+.vscode/
+.idea/
