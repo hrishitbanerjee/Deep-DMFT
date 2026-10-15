@@ -188,10 +188,13 @@ most of its physically relevant structure.
 
 ## Citation
 
-If you use this code or methodology, please cite the associated paper (link TBD).
+If you use this code or methodology, please cite the associated paper:
+Mitra, P., Banerjee, H. Deep learning-based prediction of self-energies from ab initio dynamical mean-field theory for real materials with minimal data sets. npj Comput Mater 12, 339 (2026). 
+https://doi.org/10.1038/s41524-026-02277-6.
+
 
 ---
 
 ## License
 
-MIT
+Creative Commons Attribution 4.0 International License, which permits use, sharing, adaptation, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source
